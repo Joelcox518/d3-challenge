@@ -28,7 +28,7 @@ var chartData = null;
 var chosenXAxis = 'poverty'
 var chosenYAxis = 'healthcare'
 
-var xAxisLabels = ["poverty", "age", "income"];  // Default 
+var xAxisLabels = ["poverty", "age", "income"];  
 var yAxisLabels = ["obesity", "smokes", "healthcare"];
 var labelsTitle = { "poverty": "In Poverty (%)", 
                     "age": "Age (Median)", 
@@ -201,7 +201,7 @@ function updateToolTip(chosenXAxis, chosenYAxis, circlesGroup) {
       .attr("cx", d => xLinearScale(d[chosenXAxis]))
       .attr("cy", d => yLinearScale(d[chosenYAxis]))
       .attr("r", "15")
-      .attr("fill", "pink")
+      .attr("fill", "aqua")
       .attr("opacity", ".5");
   
       // Add State abbr. text to circles. and some offset to y
